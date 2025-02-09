@@ -22,7 +22,7 @@ let close = document.querySelector("span");
 
 images.forEach((img, index) => {
   img.addEventListener("click", () => {
-    openModal(`Yami${index}.png`);
+    openModal(`/YamisYami${index}.png`);
 
   });
 });
