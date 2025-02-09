@@ -44,12 +44,13 @@ img {
 }
 
 .img-gallery {
-  width: 80%;
-  margin: 100px auto 50px;
+  width: 60%;
+  margin: 100px auto 100px;
   display: grid;
   grid-template-columns: 400px 400px 400px 400px;
-  grid-template-rows: 400px 400px;
-  grid-gap: 30px;
+  grid-template-rows: 600px 600px;
+  grid-gap: 100px;
+ 
 }
 
 .img-gallery img {
@@ -113,5 +114,7 @@ img {
   color: #ffffff;
   cursor: pointer;
 }
+
+
 
 
