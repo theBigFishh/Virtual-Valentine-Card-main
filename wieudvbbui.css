@@ -1,0 +1,117 @@
+* {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+/* (PART A) SPLASH SCREEN */
+#splash {
+  /* (A1) FULLSCREEN */
+  position: fixed; top: 0; left: 0; z-index: 999;
+  width: 100vw; height: 100vh;
+ 
+  /* (A2) CENTER */
+  display: flex;
+  align-items: center; justify-content: center;
+ 
+  /* (A3) COSMETICS */
+  font-size: 50px;
+  font-family: sans-serif Arial;
+  color: #000000; background: #ff88c8;
+}
+ 
+/* (A4) TO HIDE THE SPLASH SCREEN */
+#splash.hide {
+  opacity: 0; visibility: hidden;
+  transition: all 1s;
+}
+
+
+
+body {
+  background: #000000;
+}
+
+img {
+  float: left;
+  width:  100px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.img-gallery {
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-rows: 400px 400px;
+  grid-gap: 30px;
+}
+
+.img-gallery img {
+  width: 100%;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.img-gallery img:hover {
+  transform: scale(0.8);
+  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+.imageWrapper h1{
+  font-size: 50px;
+  font-family: sans-serif Arial;
+  color: #ff88c8;
+  top: 5;
+  justify-content: centre;
+}
+
+
+
+
+/* Wrapper */
+.imageWrapper {
+  width: 100%;
+  height: 100vh;
+  /*background: rgba(0, 0, 0, 0.9); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.imageWrapper img {
+  width: 1000px;
+  height: 1000px;
+  
+}
+
+.imageWrapper span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.imageWrapper span{
+  position: absolute;
+  align-items: centre;
+  bottom: 40;
+  font-size: 40px;
+  font-family: sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
